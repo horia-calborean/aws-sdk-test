@@ -5,9 +5,7 @@ import ro.calborean.test.aws.AWSProfile;
 import software.amazon.awssdk.auth.credentials.AwsCredentialsProvider;
 import software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider;
 import software.amazon.awssdk.services.comprehend.ComprehendClient;
-import software.amazon.awssdk.services.comprehend.model.DetectSentimentRequest;
-import software.amazon.awssdk.services.comprehend.model.DetectSentimentResponse;
-import software.amazon.awssdk.services.comprehend.model.LanguageCode;
+import software.amazon.awssdk.services.comprehend.model.*;
 
 public class SentimentAnalysis {
     public static void main(String[] args) {
@@ -19,6 +17,9 @@ public class SentimentAnalysis {
         DetectSentimentRequest req = DetectSentimentRequest.builder().text(text).languageCode(LanguageCode.EN).build();
         DetectSentimentResponse resp = cl.detectSentiment(req);
 
+
+
         System.out.println(resp);
+
     }
 }
