@@ -9,7 +9,7 @@ import software.amazon.awssdk.services.comprehend.model.DetectEntitiesResponse;
 
 public class DetectEntities {
     public static void main(String[] args) {
-        String text = "It is raining today in Cluj, but at least I met Barack Obama. He was at Untold festival. He had two bottles of Stella Artois!";
+        String text = "It is raining today in Cluj, but at least I met Barack Obama. He was at Burning Man festival. He had two bottles of Stella Artois!";
 
         AwsCredentialsProvider cr = ProfileCredentialsProvider.create(AWSProfile.NAME);
         ComprehendClient cl = ComprehendClient.builder().credentialsProvider(cr).build();
