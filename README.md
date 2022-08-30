@@ -8,3 +8,5 @@ Start with the "comprehend" package if you want to understand the examples.
 The textract package plays with both S3 and Terxtract services from AWS.
 
 Make sure to change the value of name in AWSProfile to mach the profile you want to use from .aws/credentials
+
+Hope this helps :)
